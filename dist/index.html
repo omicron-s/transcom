@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Транском - транспортная компания</title>
+    <base href="localhost">
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="/img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="/img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="48x48" href="/img/favicons/android-chrome-48x48.png" type="image/png">
+    <link rel="icon" sizes="96x96" href="/img/favicons/android-chrome-96x96.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="/img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="stylesheet" href="/styles/main.css">
+  </head>
+  <body>
+    <!--header-->
+    <header class="header">
+      <div class="container">
+        <div class="row"><a class="logo" href="/">
+                <svg width="218" height="59">
+                  <use class="logo__text" href="/img/sprites/sprite.svg#logo-text"></use>
+                  <use class="logo__ring" href="/img/sprites/sprite.svg#logo-ring"></use>
+                </svg><small>Транспортная компания </small></a>
+              <nav class="navbar header__navbar">
+                <ul>
+                  <li><a href="#products">Автопарк</a></li>
+                  <li><a href="#clients">Наши клиенты</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="contacts-block">
+                <div class="contacts-block__links"><a class="contacts-block__tel" href="tel:+74991439680">
+                    <svg>
+                      <use href="/img/sprites/sprite.svg#phone"></use>
+                    </svg><span>+7 (499) 143-96-80</span></a><a class="contacts-block__mail" href="mailto:info@transkom.su"> 
+                    <svg>
+                      <use href="/img/sprites/sprite.svg#envelope"></use>
+                    </svg><span>info@transkom.su</span></a></div>
+                <button class="btn">Заказать звонок</button>
+              </div>
+        </div>
+      </div>
+    </header>
+    <!--banner-->
+    <div class="heading">
+      <div class="container">
+        <div class="heading__text">
+          <h1 class="title-h1">Грузоперевозки по России выделенным транспортом</h1><b class="subtitle">Отправьте заявку и мы вам перезвоним в течение 30 минут</b>
+        </div>
+            <div class="form heading__form">
+              <div class="form__inputs">
+                <input data-name="" type="text" placeholder="Ваше имя">
+                <input data-tel="" placeholder="Ваш телефон">
+                <button class="btn">Отправить</button>
+              </div><small>Нажимая на кнопку «Заказать», вы даете согласие на обработку своих <a href="#">персональных данных</a></small>
+            </div>
+      </div>
+    </div>
+    <main>
+      <!--Преимущества-->
+      <div class="advantages">
+        <div class="container">
+          <div class="row">
+                  <div class="advantages__block" data-advantages="1"><b>200+</b><span>Грузовых машин</span></div>
+                  <div class="advantages__block" data-advantages="2"><b>150</b><span>Сотрудников</span></div>
+                  <div class="advantages__block" data-advantages="3"><b>350+</b><span>Клиентов</span></div>
+                  <div class="advantages__block" data-advantages="4"><b>40 000</b><span>Тонн ежемесячных перевозок</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- Наш автопарк-->
+      <article class="produtcs" id="products">
+        <div class="container">
+          <h2 class="title-h1">Наш автопарк</h2>
+          <div class="produtcs__row">
+                  <div class="product"><b class="subtitle">Фура рефрижератор 20 тонн</b>
+                    <div class="product__img">
+                      <picture>
+                        <source srcset="/img/products/refresh.webp, /img/products/refresh@2x.webp 2x" type="image/webp"><img src="/img/products/refresh.png" srcset="/img/products/refresh@2x.png 2x" alt="Транспортное средство - фура, кузов с рефрижератором(холодильником)." title="Транспортное средство - фура, кузов с рефрижератором(холодильником).">
+                      </picture>
+                    </div>
+                    <ul>
+                      <li><span>Длина кузова</span><span aria-hidden="true"></span><span>13.6 м</span></li>
+                      <li><span>Ширина кузова</span><span aria-hidden="true"></span><span>2.4 м</span></li>
+                      <li><span>Высота кузова</span><span aria-hidden="true"></span><span>2.6 м</span></li>
+                      <li><span>Грузоподъемность</span><span aria-hidden="true"></span><span>20000 кг  </span>
+                      </li>
+                      <li><span>Объем кузова</span><span aria-hidden="true"></span><span>86 м<sup>3       </sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product"><b class="subtitle">Фура изотерма 20 тонн</b>
+                    <div class="product__img">
+                      <picture>
+                        <source srcset="/img/products/isoterma.webp, /img/products/isoterma@2x.webp 2x" type="image/webp"><img src="/img/products/isoterma.png" srcset="/img/products/isoterma@2x.png 2x" alt="Транспортное средство - фура с изотермическим кузовом." title="Транспортное средство - фура с изотермическим кузовом.">
+                      </picture>
+                    </div>
+                    <ul>
+                      <li><span>Длина кузова</span><span aria-hidden="true"></span><span>13.6 м</span></li>
+                      <li><span>Ширина кузова</span><span aria-hidden="true"></span><span>2.4 м</span></li>
+                      <li><span>Высота кузова</span><span aria-hidden="true"></span><span>2.6 м</span></li>
+                      <li><span>Грузоподъемность</span><span aria-hidden="true"></span><span>20000 кг  </span>
+                      </li>
+                      <li><span>Объем кузова</span><span aria-hidden="true"></span><span>86 м<sup>3       </sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product"><b class="subtitle">Фура цистерна</b>
+                    <div class="product__img">
+                      <picture>
+                        <source srcset="/img/products/tanker.webp, /img/products/tanker@2x.webp 2x" type="image/webp"><img src="/img/products/tanker.png" srcset="/img/products/tanker@2x.png 2x" alt="Транспортное средство - фура с цистерной." title="Транспортное средство - фура с цистерной.">
+                      </picture>
+                    </div>
+                    <ul>
+                      <li><span>Длина кузова</span><span aria-hidden="true"></span><span>11.5 м</span></li>
+                      <li><span>Ширина кузова</span><span aria-hidden="true"></span><span>2.5 м</span></li>
+                      <li><span>Высота кузова</span><span aria-hidden="true"></span><span>3.3 м</span></li>
+                      <li><span>Объем цистерны</span><span aria-hidden="true"></span><span>30200 л </span>
+                      </li>
+                      <li><span>Полезная нагрузка</span><span aria-hidden="true"></span><span>28030 кг</span>
+                      </li>
+                    </ul>
+                  </div>
+          </div>
+        </div>
+      </article>
+      <!--Наши клиенты-->
+      <article class="clients" id="clients">
+        <div class="container">
+          <h2 class="title-h1">Наши клиенты</h2>
+          <div class="row"><a class="client" href="#" title="Ссылка ведет на сайт компании: X5">
+                    <picture>
+                      <source srcset="/img/clients/x5.webp, /img/clients/x5@2x.webp 2x" type="image/webp"><img src="/img/clients/x5.png" srcset="/img/clients/x5@2x.png 2x" alt="Логотип компании: X5">
+                    </picture></a><a class="client" href="#" title="Ссылка ведет на сайт компании: DANONE">
+                    <picture>
+                      <source srcset="/img/clients/danone.webp, /img/clients/danone@2x.webp 2x" type="image/webp"><img src="/img/clients/danone.png" srcset="/img/clients/danone@2x.png 2x" alt="Логотип компании: DANONE">
+                    </picture></a><a class="client" href="#" title="Ссылка ведет на сайт компании: SCHENKER">
+                    <picture>
+                      <source srcset="/img/clients/schenker.webp, /img/clients/schenker@2x.webp 2x" type="image/webp"><img src="/img/clients/schenker.png" srcset="/img/clients/schenker@2x.png 2x" alt="Логотип компании: SCHENKER">
+                    </picture></a><a class="client" href="#" title="Ссылка ведет на сайт компании: РОСКАР">
+                    <picture>
+                      <source srcset="/img/clients/roskar.webp, /img/clients/roskar@2x.webp 2x" type="image/webp"><img src="/img/clients/roskar.png" srcset="/img/clients/roskar@2x.png 2x" alt="Логотип компании: РОСКАР">
+                    </picture></a><a class="client" href="#" title="Ссылка ведет на сайт компании: МЕГАПОЛИС">
+                    <picture>
+                      <source srcset="/img/clients/megapolis.webp, /img/clients/megapolis@2x.webp 2x" type="image/webp"><img src="/img/clients/megapolis.png" srcset="/img/clients/megapolis@2x.png 2x" alt="Логотип компании: МЕГАПОЛИС">
+                    </picture></a><a class="client" href="#" title="Ссылка ведет на сайт компании: ДЫМОВ">
+                    <picture>
+                      <source srcset="/img/clients/dymov.webp, /img/clients/dymov@2x.webp 2x" type="image/webp"><img src="/img/clients/dymov.png" srcset="/img/clients/dymov@2x.png 2x" alt="Логотип компании: ДЫМОВ">
+                    </picture></a>
+          </div>
+        </div>
+      </article>
+      <!--Доверие-->
+      <div class="trust">
+        <div class="container">
+          <div class="trust__left-column">
+            <ul>
+              <li>Оформляем закрывающие документы в течение 3 рабочих дней с момента разгрузки</li>
+              <li>Застрахованы абсолютно все грузы клиентов</li>
+              <li>Предоставляем персонального менеджера, который будет на связи 24 часа/7 дней</li>
+              <li>Решаем транспортные задачи любой сложности и масштаба</li>
+            </ul>
+          </div>
+          <div class="trust__right-column">
+            <div class="trust__right-block trust__quality">
+              <div class="trust__img"><img src="/img/icons/arrow-up.svg" alt="Стрелочка вверх"></div><b class="title-h2">Высокое качество услуг</b>
+              <p>Транспортная Компания  была создана  в 2011 году и  более 9 лет успешно работает на рынке транспортной логистики </p>
+            </div>
+            <div class="trust__right-block trust__sell">
+              <div class="trust__img"><img src="/img/icons/purse.svg" alt="Кошелек"></div><b class="title-h2">Низкие цены</b>
+              <p>Индивидуальные условия для постоянных клиентов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Контакты-->
+      <article class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__block">
+            <h2 class="title-h2">Контакты</h2>
+            <ul>
+              <li> <b>Наш адрес:</b><span>119192, гор. Москва, Ломоносовский проспект, д.&nbsp;43, корп.&nbsp;2, этаж&nbsp;5, комната&nbsp;11.</span></li>
+              <li> <b>Время работы:</b><span>с 9:00 до 18:00 Пн - Пт</span></li>
+              <li><b>Телефон:</b><a href="tel:+74991439680">+7(499) 143-96-80</a></li>
+              <li><b>E-mail:</b><a href="mailto:info@transkom.su">info@transkom.su</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts__map"><script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A83ecdbbe30289edd0efd9a0e2e60b51c1c10d37f2324dd02b824167a6c72f500&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script></div>
+      </article>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row"><a class="logo" href="/">
+                <svg width="218" height="59">
+                  <use class="logo__text" href="/img/sprites/sprite.svg#logo-text"></use>
+                  <use class="logo__ring" href="/img/sprites/sprite.svg#logo-ring"></use>
+                </svg><small>Транспортная компания </small></a>
+              <div class="contacts-block">
+                <div class="contacts-block__links"><a class="contacts-block__tel" href="tel:+74991439680">
+                    <svg>
+                      <use href="/img/sprites/sprite.svg#phone"></use>
+                    </svg><span>+7 (499) 143-96-80</span></a><a class="contacts-block__mail" href="mailto:info@transkom.su"> 
+                    <svg>
+                      <use href="/img/sprites/sprite.svg#envelope"></use>
+                    </svg><span>info@transkom.su</span></a></div>
+                <button class="btn">Заказать звонок</button>
+              </div>
+        </div>
+        <div class="footer__bottom"><small>© 2020 Transcom.ru. Все права защищены</small><a href="#personal">Политика конфиденциальности</a><a href="https://web2.ru" target="_blank">Студия Web2 – Создание и продвижение сайтов</a></div>
+      </div>
+      <button class="scroll-up">
+        <svg width="12" height="8">
+          <use class="scroll-up__arrow" href="/img/sprites/sprite.svg#arrow"></use>
+        </svg>
+      </button>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/vendor.js"></script>
+  </body>
+</html>
