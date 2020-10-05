@@ -7,35 +7,39 @@
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" sizes="60x60" href="./img/favicons/favicon.png" type="image/png">
+    <link rel="icon" href="./img/favicons/favicon.png" type="image/png">
     <link rel="stylesheet" href="./styles/main.min.css">
   </head>
   <body>
     <!--header-->
     <header class="header">
       <div class="container">
-        <div class="row"><a class="logo" href="./index.html">
+        <div class="row"><a class="logo header__logo" href="./index.html">
                 <svg width="218" height="59">
                   <use class="logo__text" href="./img/sprites/sprite.svg#logo-text"></use>
                   <use class="logo__ring" href="./img/sprites/sprite.svg#logo-ring"></use>
                 </svg><small>Транспортная компания </small></a>
-              <nav class="navbar header__navbar">
-                <ul>
-                  <li><a href="#products">Автопарк</a></li>
-                  <li><a href="#clients">Наши клиенты</a></li>
-                  <li><a href="#contacts">Контакты</a></li>
-                </ul>
-              </nav>
-              <div class="contacts-block">
-                <div class="contacts-block__links"><a class="contacts-block__tel" href="tel:+74991439680" title="Позвонить на номер: +7 (499) 143-96-80">
-                    <svg>
-                      <use href="./img/sprites/sprite.svg#phone"></use>
-                    </svg><span>+7 (499) 143-96-80</span></a><a class="contacts-block__mail" href="mailto:info@transkom.su" title="Написать письмо на: info@transkom.su"> 
-                    <svg>
-                      <use href="./img/sprites/sprite.svg#envelope"></use>
-                    </svg><span>info@transkom.su</span></a></div>
-                <button class="btn">Заказать звонок</button>
-              </div>
+          <div class="header__links">
+                <nav class="navbar header__navbar">
+                  <ul>
+                    <li><a href="#products">Автопарк</a></li>
+                    <li><a href="#clients">Наши клиенты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                  </ul>
+                </nav>
+                <button class="btn-burger header__contacts-block-btn-burger" aria-expanded="false"><span class="btn-burger__top"></span><span class="btn-burger__middle"></span><span class="btn-burger__bottom"></span></button>
+                <div class="contacts-block header__contacts-block">
+                  <div class="contacts-block__links"><a class="contacts-block__tel" href="tel:+74991439680" title="Позвонить на номер: +7 (499) 143-96-80">
+                      <svg>
+                        <use href="./img/sprites/sprite.svg#phone"></use>
+                      </svg><span>+7 (499) 143-96-80</span></a><a class="contacts-block__mail" href="mailto:info@transkom.su" title="Написать письмо на: info@transkom.su"> 
+                      <svg>
+                        <use href="./img/sprites/sprite.svg#envelope"></use>
+                      </svg><span>info@transkom.su</span></a></div>
+                  <button class="btn">Заказать звонок</button>
+                </div>
+                <button class="btn-burger header__links-btn-burger" aria-expanded="false"><span class="btn-burger__top"></span><span class="btn-burger__middle"></span><span class="btn-burger__bottom"></span></button>
+          </div>
         </div>
       </div>
     </header>
@@ -77,10 +81,10 @@
       <div class="advantages">
         <div class="container">
           <div class="row">
-                  <div class="advantages__block" data-advantages="1"><b>200+</b><span>Грузовых машин</span></div>
-                  <div class="advantages__block" data-advantages="2"><b>150</b><span>Сотрудников</span></div>
-                  <div class="advantages__block" data-advantages="3"><b>350+</b><span>Клиентов</span></div>
-                  <div class="advantages__block" data-advantages="4"><b>40 000</b><span>Тонн ежемесячных перевозок</span></div>
+                  <div class="advantages__block" data-advantages="1"><b data-value="200">0</b><span>Грузовых машин</span></div>
+                  <div class="advantages__block" data-advantages="2"><b data-value="150">0</b><span>Сотрудников</span></div>
+                  <div class="advantages__block" data-advantages="3"><b data-value="350">0</b><span>Клиентов</span></div>
+                  <div class="advantages__block" data-advantages="4"><b data-value="40000">0</b><span>Тонн ежемесячных перевозок</span></div>
           </div>
         </div>
       </div>
@@ -213,7 +217,7 @@
                   <use class="logo__text" href="./img/sprites/sprite.svg#logo-text"></use>
                   <use class="logo__ring" href="./img/sprites/sprite.svg#logo-ring"></use>
                 </svg><small>Транспортная компания </small></a>
-              <div class="contacts-block">
+              <div class="contacts-block footer__contacts-block">
                 <div class="contacts-block__links"><a class="contacts-block__tel" href="tel:+74991439680" title="Позвонить на номер: +7 (499) 143-96-80">
                     <svg>
                       <use href="./img/sprites/sprite.svg#phone"></use>
