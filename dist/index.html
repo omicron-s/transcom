@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Транском - транспортная компания</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicons/favicon.png" type="image/png">
     <link rel="stylesheet" href="./styles/main.min.css">
@@ -16,10 +14,11 @@
       <div class="container">
         <div class="row"><a class="logo header__logo" href="./index.html">
                 <svg width="218" height="59">
-                  <use class="logo__text" href="./img/sprites/sprite.svg#logo-text"></use>
+                  <use href="./img/sprites/sprite.svg#logo-text"></use>
                   <use class="logo__ring" href="./img/sprites/sprite.svg#logo-ring"></use>
                 </svg><small>Транспортная компания </small></a>
           <div class="header__links">
+                <button class="btn-burger header__navbar-btn-burger" aria-expanded="false"><span class="btn-burger__top"></span><span class="btn-burger__middle"></span><span class="btn-burger__bottom"></span></button>
                 <nav class="navbar header__navbar">
                   <ul>
                     <li><a href="#products">Автопарк</a></li>
@@ -36,25 +35,50 @@
                       <svg>
                         <use href="./img/sprites/sprite.svg#envelope"></use>
                       </svg><span>info@transkom.su</span></a></div>
-                  <button class="btn">Заказать звонок</button>
+                  <button class="btn" data-modal="form">Заказать звонок</button>
                 </div>
-                <button class="btn-burger header__links-btn-burger" aria-expanded="false"><span class="btn-burger__top"></span><span class="btn-burger__middle"></span><span class="btn-burger__bottom"></span></button>
           </div>
         </div>
       </div>
     </header>
     <!--Модалки-->
-    <div class="modal" data-modal="personal" role="dialog" data-no-focus-lock>
-      <div class="modal__content"><b class="subtitle">Политика персональных данных</b>
-        <p>Бла-бла-бла, сайт рыба текст, нужен текст для третьих лиц и тех кто ломает 4-ую стенку, да-да,  4-ые лица и 5-ые лица, может есть и 6-ые? Интересно, у них голова в виде гайки раз у них 6 лиц?</p>
-        <div class="form">
-          <div class="form__inputs">
-            <input data-name type="text" placeholder="Ваше имя">
-            <input data-tel placeholder="Ваш телефон">
-            <button class="btn">Отправить</button>
-          </div><small>Нажимая на кнопку «Заказать», вы даете согласие на обработку своих 
-            <button data-modal="personal" title="Открыть окно политики конфиденциальности">персональных данных</button></small>
+    <div class="modal modal-personal" data-modal="personal" role="dialog" data-no-focus-lock>
+      <div class="modal__content"><b class="subtitle">Политика конфиденциальности</b>
+        <p>Предоставляя свои персональные данные <b>Пользователь</b> даёт согласие на обработку, хранение и использование своих персональных данных на основании ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006 г. в следующих целях:</p>
+        <ul>
+          <li>Осуществление клиентской поддержки</li>
+          <li>Получения <b>Пользователем</b> информации о маркетинговых событиях</li>
+          <li>Проведения аудита и прочих внутренних исследований с целью повышения качества предоставляемых услуг.</li>
+        </ul>
+        <p>Под персональными данными подразумевается любая информация личного характера, позволяющая установить личность <b>Пользователя/Покупателя</b> такая как:</p>
+        <ul>
+          <li>Фамилия, Имя, Отчество</li>
+          <li>Дата рождения</li>
+          <li>Контактный телефон</li>
+          <li>Адрес электронной почты</li>
+          <li>Почтовый адрес</li>
+        </ul>
+        <p>Персональные данные <b>Пользователей</b> хранятся исключительно на электронных носителях и обрабатываются с использованием автоматизированных систем, за исключением случаев, когда неавтоматизированная обработка персональных данных необходима в связи с исполнением требований законодательства.</p>
+        <p>Администрация сайта обязуется не передавать полученные персональные данные третьим лицам, за исключением следующих случаев:</p>
+        <ul>
+          <li>По запросам уполномоченных органов государственной власти РФ только по основаниям и в порядке, установленным законодательством РФ.</li>
+          <li>Стратегическим партнерам, которые работают с администрацией сайта для предоставления продуктов и услуг, или тем из них, которые помогают администрацией сайта реализовывать продукты и услуги потребителям. Мы предоставляем третьим лицам минимальный объем персональных данных, необходимый только для оказания требуемой услуги или проведения необходимой транзакции.</li>
+        </ul>
+        <p>Администрация сайта оставляет за собой право вносить изменения в одностороннем порядке в настоящие правила, при условии, что изменения не противоречат действующему законодательству РФ. Изменения условий настоящих правил вступают в силу после их публикации на Сайте.</p>
+        <div class="modal__btn">
+          <button class="btn-close" title="Закрыть" aria-label="Закрыть"></button>
         </div>
+      </div>
+    </div>
+    <div class="modal modal-form" data-modal="form" role="dialog" data-no-focus-lock>
+      <div class="modal__content"><b class="subtitle">Заказать звонок</b>
+            <div class="form modal-form__form">
+              <div class="form__inputs">
+                <input data-name type="text" placeholder="Ваше имя">
+                <input data-tel placeholder="Ваш телефон">
+                <button class="btn">Отправить</button>
+              </div><small>Нажимая на кнопку «Заказать», вы даете согласие на обработку своих персональных данных</small>
+            </div>
         <div class="modal__btn">
           <button class="btn-close" title="Закрыть" aria-label="Закрыть"></button>
         </div>
@@ -214,7 +238,7 @@
       <div class="container">
         <div class="row"><a class="logo" href="./index.html">
                 <svg width="218" height="59">
-                  <use class="logo__text" href="./img/sprites/sprite.svg#logo-text"></use>
+                  <use href="./img/sprites/sprite.svg#logo-text"></use>
                   <use class="logo__ring" href="./img/sprites/sprite.svg#logo-ring"></use>
                 </svg><small>Транспортная компания </small></a>
               <div class="contacts-block footer__contacts-block">
@@ -225,11 +249,16 @@
                     <svg>
                       <use href="./img/sprites/sprite.svg#envelope"></use>
                     </svg><span>info@transkom.su</span></a></div>
-                <button class="btn">Заказать звонок</button>
+                <button class="btn" data-modal="form">Заказать звонок</button>
               </div>
         </div>
         <div class="footer__bottom"><small>© 2020 Transcom.ru. Все права защищены</small>
-          <button data-modal="personal" title="Открыть окно политики конфиденциальности">Политика конфиденциальности</button><a href="https://web2.ru" target="_blank" title="Переход на сайт web2.ru">Студия Web2 – Создание и продвижение сайтов</a>
+          <div>
+            <button data-modal="personal" title="Открыть окно политики конфиденциальности">Политика конфиденциальности</button>
+          </div><a class="footer__bottom-web2" href="https://web2.ru" target="_blank" title="Переход на сайт web2.ru"> 
+            <svg width="107" height="28">
+              <use href="./img/sprites/sprite.svg#web2ru"></use>
+            </svg><span>Студия "Web2"</span></a>
         </div>
       </div>
       <button class="scroll-up">
